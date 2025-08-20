@@ -1,161 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- ========== BASIC SEO ========== -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>OYE Experts | Geotechnical & Geosynthetic Solutions Worldwide</title>
-  <meta name="description" content="OYE Experts provides geotechnical engineering services and high‑performance geosynthetics: geotextiles, geogrids, geomembranes, GCLs, geocomposites, geocells. International supply, design assistance, and installation support." />
+  <meta name="description" content="OYE Experts provides geotechnical engineering services and high-performance geosynthetics: geotextiles, geogrids, geomembranes, GCLs, geocomposites, geocells. International supply, design assistance, and installation support." />
   <link rel="canonical" href="https://www.example.com/" />
-  
-  <!-- Open Graph / Social -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="OYE Experts | Geotechnical & Geosynthetic Solutions Worldwide" />
-  <meta property="og:description" content="International supplier of geosynthetics with geotechnical services: retaining walls, erosion control, ground improvement, pavements, rockfall protection, landfills, canal lining." />
-  <meta property="og:image" content="assets/og-cover.jpg" />
-  <meta property="og:url" content="https://www.example.com/" />
-  <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="icon" href="assets/favicon.ico" />
 
-  <!-- ========== STYLES ========== -->
   <style>
-    :root{
-      --brand-gold:#D4AF37; /* gold to match your logo */
-      --brand-gold-600:#b8922c;
-      --brand-dark:#0d0d0d;
-      --ink:#1a1a1a;
-      --muted:#6b7280;
-      --bg:#ffffff;
-      --bg-alt:#0f1115;
-      --card:#111318;
-      --ring: rgba(212,175,55,.4);
-      --shadow: 0 10px 25px rgba(0,0,0,.12), 0 2px 8px rgba(0,0,0,.06);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-    img{max-width:100%;display:block}
-    a{color:var(--brand-gold);text-decoration:none}
-    a:hover{color:var(--brand-gold-600)}
-
-    /* Layout util */
-    .container{width:min(1200px,92vw);margin-inline:auto}
-    .grid{display:grid;gap:24px}
-    .btn{display:inline-block;padding:.9rem 1.15rem;border-radius:14px;border:1px solid transparent;background:var(--brand-gold);color:#111;font-weight:700;box-shadow:var(--shadow)}
-    .btn:hover{background:var(--brand-gold-600)}
-    .btn.outline{background:transparent;border-color:var(--brand-gold);color:var(--brand-gold)}
-    .pill{display:inline-flex;gap:.5rem;align-items:center;padding:.35rem .7rem;border:1px solid #222;border-radius:999px;color:#eee;background:#101216}
-    .section{padding:72px 0; scroll-margin-top:90px}
-    .section.dark{background:linear-gradient(180deg,#0b0c10,#111318)}
-    .card{background:#0f1115;border:1px solid #1f242e;color:#e7e7e7;border-radius:18px;padding:22px;box-shadow:var(--shadow)}
-    .muted{color:var(--muted)}
-    .h1{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:0 0 10px;font-weight:900}
-    .h2{font-size:clamp(24px,3.5vw,34px);line-height:1.2;margin:0 0 10px;font-weight:800}
-    .h3{font-size:20px;margin:0 0 8px;font-weight:700}
-
-    /* ======= NAV ======= */
-    header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.8);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid #1f242e}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:12px;color:#f8f8f8}
-    .brand img{height:38px;width:auto}
-    nav a{color:#e7e7e7;opacity:.9;margin:0 10px;font-weight:600}
-    nav a:hover{opacity:1;color:var(--brand-gold)}
-    .nav-cta{display:flex;align-items:center;gap:10px}
-
-    /* ======= HERO ======= */
-    .hero{background:radial-gradient(1200px 600px at 20% -20%, rgba(212,175,55,.22), transparent),
-           radial-gradient(1000px 600px at 100% 0%, rgba(212,175,55,.12), transparent),
-           #0b0c10;color:#f5f5f5;padding:84px 0 56px;border-bottom:1px solid #1f242e}
-    .hero-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
-    .hero p{color:#d2d6dc}
-    .hero .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
-    .stat{background:#0f1115;border:1px solid #1f242e;border-radius:16px;padding:18px;text-align:center}
-    .stat strong{display:block;font-size:28px;color:#fff}
-
-    /* ======= LOGO STRIP ======= */
-    .logos{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;opacity:.85}
-    .logos img{height:38px;margin-inline:auto;filter:grayscale(100%) contrast(0.6)}
-
-    /* ======= SERVICES ======= */
-    .services{grid-template-columns:repeat(3,1fr)}
-    .service .icon{width:36px;height:36px;border-radius:10px;background:rgba(212,175,55,.12);display:grid;place-items:center;margin-bottom:8px;border:1px solid #2a303a}
-
-    /* ======= MATERIALS ======= */
-    .materials{grid-template-columns:repeat(4,1fr)}
-    .mat img{border-radius:14px;border:1px solid #1f242e}
-    .chip{display:inline-block;border:1px solid #2a303a;border-radius:999px;padding:.25rem .6rem;color:#cbd5e1;font-size:.85rem}
-
-    /* ======= PROJECTS ======= */
-    .projects{grid-template-columns:repeat(3,1fr)}
-    .project img{border-radius:14px}
-
-    /* ======= CTA STRIP ======= */
-    .cta{display:flex;align-items:center;justify-content:space-between;gap:16px;background:#0f1115;border:1px solid #1f242e;border-radius:18px;padding:24px}
-
-    /* ======= CONTACT ======= */
-    form{display:grid;gap:14px}
-    .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-    input,select,textarea{background:#0b0c10;border:1px solid #1f242e;color:#f1f5f9;border-radius:12px;padding:12px}
-    input:focus,select:focus,textarea:focus{outline:2px solid var(--ring);border-color:var(--brand-gold)}
-    label{font-weight:600;color:#e7e7e7}
-    small.help{color:#94a3b8}
-    .policy{display:flex;gap:10px;align-items:flex-start;color:#cbd5e1}
-
-    /* ======= FOOTER ======= */
-    footer{background:#0b0c10;border-top:1px solid #1f242e;color:#cbd5e1}
-    .footcols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px}
-    .copyright{border-top:1px solid #1f242e;margin-top:24px;padding:16px 0;color:#9aa3b2}
-
-    /* ======= FLOATING WHATSAPP ======= */
-    .wa{position:fixed;right:18px;bottom:18px;z-index:60}
-    .wa a{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#0b0c10;padding:12px 16px;border-radius:999px;font-weight:800;box-shadow:0 14px 30px rgba(37,211,102,.35)}
-
-    /* ======= TOP BUTTON ======= */
-    #toTop{position:fixed;right:22px;bottom:86px;display:none;padding:10px 12px;border-radius:12px;background:#111;border:1px solid #2a303a;color:#e5e7eb}
-
-    /* ======= MEDIA ======= */
-    @media (max-width:980px){
-      .hero-wrap{grid-template-columns:1fr}
-      .services{grid-template-columns:1fr 1fr}
-      .materials{grid-template-columns:1fr 1fr}
-      .projects{grid-template-columns:1fr}
-      .logos{grid-template-columns:repeat(3,1fr)}
-      .footcols{grid-template-columns:1fr 1fr}
-      .row{grid-template-columns:1fr}
-      nav{display:none}
-    }
+    /* ... your existing CSS here ... */
   </style>
-
-  <!-- ========== STRUCTURED DATA ========== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "OYE Experts",
-    "url": "https://www.example.com/",
-    "logo": "https://www.example.com/assets/logo.png",
-    "sameAs": [
-      "https://www.linkedin.com/company/oye-experts"
-    ],
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "telephone": "+91-98765-43210",
-      "contactType": "sales",
-      "areaServed": "Worldwide",
-      "availableLanguage": ["en", "hi"]
-    }]
-  }
-  </script>
 </head>
 <body>
-  <!-- ======= FLOAT ACTIONS ======= -->
-  <div class="wa" aria-label="WhatsApp">
-    <a href="https://wa.me/919876543210?text=Hi%20OYE%20Experts%2C%20I%27d%20like%20a%20quote%20for%20geosynthetics." target="_blank" rel="noopener">💬 WhatsApp</a>
-  </div>
-  <button id="toTop" aria-label="Back to top">↑</button>
 
-  <!-- ======= NAV ======= -->
+  <!-- NAV -->
   <header>
     <div class="container nav">
       <a class="brand" href="#">
@@ -167,6 +27,7 @@
         <a href="#materials">Materials</a>
         <a href="#applications">Applications</a>
         <a href="#projects">Projects</a>
+        <a href="#blog" target="_blank">Blog</a>
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav-cta">
@@ -175,288 +36,49 @@
     </div>
   </header>
 
-  <!-- ======= HERO ======= -->
-  <section class="hero">
-    <div class="container hero-wrap">
-      <div>
-        <span class="pill">Trusted worldwide • Geotechnical & Geosynthetics</span>
-        <h1 class="h1">Engineered <span style="color:var(--brand-gold)">Geosynthetic</span> Solutions for Roads, Rail, Landfills & Water</h1>
-        <p>We supply and support high‑performance geotextiles, geogrids, geomembranes, GCLs, geocomposites, geocells and more. From design assistance to logistics and site supervision—we help you deliver faster, safer, and cost‑effective infrastructure.</p>
-        <div style="display:flex;gap:12px;margin-top:14px">
-          <a class="btn" href="#materials">Explore Materials</a>
-          <a class="btn outline" href="#projects">View Case Studies</a>
-        </div>
-        <div class="stats">
-          <div class="stat"><strong>25+ Countries</strong><span class="muted">Supply & delivery</span></div>
-          <div class="stat"><strong>500+ Projects</strong><span class="muted">Roads, rail, landfills</span></div>
-          <div class="stat"><strong>ISO Certified</strong><span class="muted">Quality assured</span></div>
-        </div>
-      </div>
-      <div>
-        <img src="assets/hero-rewall.jpg" alt="Reinforced earth wall with geogrid" loading="lazy">
-      </div>
-    </div>
-  </section>
+  <!-- ... your existing sections like HERO, SERVICES, MATERIALS, APPLICATIONS, PROJECTS ... -->
 
-  <!-- ======= TRUST STRIP ======= -->
-  <section class="section dark">
+  <!-- BLOG SECTION (Local Test Version) -->
+  <section id="blog" class="section">
     <div class="container">
-      <p class="muted" style="text-transform:uppercase;letter-spacing:.12em;margin:0 0 12px">Trusted by contractors & agencies</p>
-      <div class="logos">
-        <img src="assets/logos/client1.svg" alt="Client 1" loading="lazy">
-        <img src="assets/logos/client2.svg" alt="Client 2" loading="lazy">
-        <img src="assets/logos/client3.svg" alt="Client 3" loading="lazy">
-        <img src="assets/logos/client4.svg" alt="Client 4" loading="lazy">
-        <img src="assets/logos/client5.svg" alt="Client 5" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= WHY US ======= -->
-  <section class="section">
-    <div class="container">
-      <h2 class="h2">Why Choose OYE Experts</h2>
-      <p class="muted">We combine geotechnical expertise with a robust global supply network to deliver materials on time and on spec.</p>
-      <div class="grid services">
-        <article class="card service">
-          <div class="icon">🏗️</div>
-          <h3 class="h3">Design Assistance</h3>
-          <p>Preliminary design checks, product selection, and value engineering for RE walls, slopes, embankments, and liners.</p>
-        </article>
-        <article class="card service">
-          <div class="icon">🚚</div>
-          <h3 class="h3">Reliable Logistics</h3>
-          <p>Export documentation, multimodal shipping, and on‑site delivery across MEA & APAC with batch traceability.</p>
-        </article>
-        <article class="card service">
-          <div class="icon">🧪</div>
-          <h3 class="h3">Assured Quality</h3>
-          <p>ISO‑aligned QA/QC, factory MTCs, and third‑party lab testing on request for tensile strength, puncture, permeability, and UV resistance.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= SERVICES ======= -->
-  <section id="services" class="section dark">
-    <div class="container">
-      <h2 class="h2">Services</h2>
-      <div class="grid services">
-        <article class="card service"><div class="icon">🧱</div><h3 class="h3">Retaining Wall Solutions</h3><p>Mechanically Stabilized Earth (MSE/RE) walls using geogrids and modular facings. Design checks, detailing, supply & supervision.</p></article>
-        <article class="card service"><div class="icon">🌿</div><h3 class="h3">Erosion Control & Slope Protection</h3><p>Geotextiles, geocells, and biodegradable mats to stabilize slopes, channels, and embankments.</p></article>
-        <article class="card service"><div class="icon">🪨</div><h3 class="h3">Ground Improvement</h3><p>Subgrade reinforcement, separation & filtration layers, and soft ground solutions using geogrids and geotextiles.</p></article>
-        <article class="card service"><div class="icon">🛣️</div><h3 class="h3">Pavement Solutions</h3><p>Asphalt reinforcement grids, interlayers, and base course geogrids to extend pavement life and reduce rutting.</p></article>
-        <article class="card service"><div class="icon">🧗</div><h3 class="h3">Rockfall Protection</h3><p>Rockfall netting, drapery systems, and attenuation with anchors, nails, and mesh.</p></article>
-        <article class="card service"><div class="icon">📌</div><h3 class="h3">Soil Nailing</h3><p>Design guidance and supply of nails, plates, shotcrete mesh, and facing systems.</p></article>
-        <article class="card service"><div class="icon">♻️</div><h3 class="h3">Landfill Engineering</h3><p>Composite liner systems with geomembranes, GCLs, and drainage geocomposites; leachate collection & gas venting.</p></article>
-        <article class="card service"><div class="icon">🚰</div><h3 class="h3">Canal Lining</h3><p>Geomembrane and geotextile systems for seepage control, under‑drains, and erosion protection.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= MATERIALS ======= -->
-  <section id="materials" class="section">
-    <div class="container">
-      <h2 class="h2">Materials We Supply</h2>
-      <p class="muted">Core categories with typical specs and applications. Datasheets available on request.</p>
-      <div class="grid materials">
-        <article class="card mat">
-          <img src="assets/materials/geotextile.jpg" alt="Nonwoven geotextile roll" loading="lazy">
-          <h3 class="h3">Geotextiles</h3>
-          <p>Nonwoven & woven; separation, filtration, drainage, and protection layers. Weight 100–1000 gsm.</p>
-          <span class="chip">Separation</span> <span class="chip">Filtration</span>
-        </article>
-        <article class="card mat">
-          <img src="assets/materials/geogrid.jpg" alt="Polymer geogrid" loading="lazy">
-          <h3 class="h3">Geogrids</h3>
-          <p>PP/PET/HDPE biaxial & uniaxial grids for reinforcement in pavements, RE walls & slopes.</p>
-          <span class="chip">Reinforcement</span> <span class="chip">Subgrade</span>
-        </article>
-        <article class="card mat">
-          <img src="assets/materials/geomembrane.jpg" alt="HDPE geomembrane installation" loading="lazy">
-          <h3 class="h3">Geomembranes</h3>
-          <p>HDPE/LLDPE liners 0.75–3.0 mm for landfill cells, lagoons, canals, and basements.</p>
-          <span class="chip">Containment</span> <span class="chip">Seepage Control</span>
-        </article>
-        <article class="card mat">
-          <img src="assets/materials/gcl.jpg" alt="Geosynthetic clay liner" loading="lazy">
-          <h3 class="h3">GCLs</h3>
-          <p>Sodium bentonite based composite liners for secondary containment and capping.</p>
-          <span class="chip">Barrier</span>
-        </article>
-        <article class="card mat">
-          <img src="assets/materials/geocomposite.jpg" alt="Geocomposite fin drain" loading="lazy">
-          <h3 class="h3">Geocomposites / Fin Drains</h3>
-          <p>Drainage cores with geotextile filters for walls, basements, and landfills. (Fin drain, strip drain)</p>
-          <span class="chip">Drainage</span>
-        </article>
-        <article class="card mat">
-          <img src="assets/materials/geocell.jpg" alt="Geocell cellular confinement" loading="lazy">
-          <h3 class="h3">Geocells</h3>
-          <p>Cellular confinement systems for slope protection, channels and low‑cost road bases.</p>
-          <span class="chip">Slope Protection</span>
-        </article>
-        <article class="card mat">
-          <img src="assets/materials/rockfall.jpg" alt="Rockfall netting on slope" loading="lazy">
-          <h3 class="h3">Rockfall Net</h3>
-          <p>Woven wire mesh, chain link, and high‑energy panels for drapery and barriers.</p>
-          <span class="chip">Safety</span>
-        </article>
-        <article class="card mat">
-          <img src="assets/materials/extras.jpg" alt="Accessories like geostrap, headers, draincells, pavers, fiberglass mesh" loading="lazy">
-          <h3 class="h3">Accessories</h3>
-          <p>Headers, Draincells, Plastic Grass Pavers, Fibreglass Mesh, Geostrap & more.</p>
-          <span class="chip">Complete System</span>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= APPLICATIONS ======= -->
-  <section id="applications" class="section dark">
-    <div class="container">
-      <h2 class="h2">Applications</h2>
-      <div class="grid services">
-        <article class="card service"><div class="icon">🛤️</div><h3 class="h3">Road & Rail</h3><p>Reinforcement, separation, filtration, and drainage layers that speed construction and extend life.</p></article>
-        <article class="card service"><div class="icon">🏞️</div><h3 class="h3">Erosion Control</h3><p>Protect slopes and waterways with geocells, TRMs, and rockfall systems.</p></article>
-        <article class="card service"><div class="icon">🏗️</div><h3 class="h3">Structures</h3><p>RE walls, abutments, and soil nailing systems for safe and economical earth retention.</p></article>
-        <article class="card service"><div class="icon">🏭</div><h3 class="h3">Waste & Water</h3><p>Composite liners, leachate collection, and canal lining for containment and seepage control.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= PROJECTS / CASE STUDIES ======= -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2 class="h2">Recent Projects</h2>
-      <div class="grid projects">
+      <h2 class="h2">Latest News & Blog</h2>
+      <div id="blog-posts" class="grid projects">
+        <!-- Dummy Blog Posts for Local Testing -->
         <article class="card project">
-          <img src="assets/projects/re-wall.jpg" alt="MSE retaining wall project" loading="lazy">
-          <h3 class="h3">RE Wall for Highway Interchange</h3>
-          <p class="muted">65,000 m² uniaxial geogrid • Precast panels • 30% cost saving vs. conventional RCC wall</p>
+          <img src="assets/blog-placeholder.jpg" alt="Blog Post 1" />
+          <h3 class="h3">How Geosynthetics Improve Soil Stability</h3>
+          <p class="muted">2025-08-20</p>
+          <a href="https://oyexperts0.wordpress.com" target="_blank" class="btn outline">Read More</a>
         </article>
         <article class="card project">
-          <img src="assets/projects/landfill.jpg" alt="Landfill cell with HDPE liner" loading="lazy">
-          <h3 class="h3">Landfill Cell Expansion</h3>
-          <p class="muted">1.5 mm HDPE geomembrane + GCL • CQA & leak testing • Delivered on time</p>
+          <img src="assets/blog-placeholder.jpg" alt="Blog Post 2" />
+          <h3 class="h3">Top Applications of Geotextiles</h3>
+          <p class="muted">2025-08-15</p>
+          <a href="https://oyexperts0.wordpress.com" target="_blank" class="btn outline">Read More</a>
         </article>
         <article class="card project">
-          <img src="assets/projects/canal.jpg" alt="Canal lining with geomembrane" loading="lazy">
-          <h3 class="h3">Canal Lining Rehabilitation</h3>
-          <p class="muted">LLDPE liner with nonwoven protection • 40% seepage reduction</p>
+          <img src="assets/blog-placeholder.jpg" alt="Blog Post 3" />
+          <h3 class="h3">Landfill Solutions Using GCLs</h3>
+          <p class="muted">2025-08-10</p>
+          <a href="https://oyexperts0.wordpress.com" target="_blank" class="btn outline">Read More</a>
+        </article>
+        <article class="card project">
+          <img src="assets/blog-placeholder.jpg" alt="Blog Post 4" />
+          <h3 class="h3">Retaining Wall Innovations with Geogrids</h3>
+          <p class="muted">2025-08-05</p>
+          <a href="https://oyexperts0.wordpress.com" target="_blank" class="btn outline">Read More</a>
         </article>
       </div>
-      <div class="cta" style="margin-top:22px">
-        <div>
-          <h3 class="h3" style="margin:0;color:#e7e7e7">Have a similar challenge?</h3>
-          <p class="muted" style="margin:4px 0 0">Share drawings/specs—we'll send a quick bill of quantities and proposal.</p>
-        </div>
-        <a class="btn" href="#contact">Request a Proposal</a>
-      </div>
     </div>
   </section>
 
-  <!-- ======= CONTACT ======= -->
-  <section id="contact" class="section dark">
-    <div class="container">
-      <h2 class="h2">Request a Quote</h2>
-      <p class="muted">Fill the form and our team will get back within 24 hours. Attach specs/drawings via email after submission.</p>
-      <div class="grid" style="grid-template-columns:1.2fr .8fr;align-items:start">
-        <form id="contact-form" class="card" action="https://formspree.io/f/your-id" method="POST">
-          <div class="row">
-            <div>
-              <label for="name">Full Name</label>
-              <input id="name" name="name" required placeholder="Your name" />
-            </div>
-            <div>
-              <label for="company">Company</label>
-              <input id="company" name="company" required placeholder="Company / Agency" />
-            </div>
-          </div>
-          <div class="row">
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required placeholder="you@company.com" />
-            </div>
-            <div>
-              <label for="phone">Phone / WhatsApp</label>
-              <input id="phone" name="phone" placeholder="+91…" />
-            </div>
-          </div>
-          <div class="row">
-            <div>
-              <label for="country">Country</label>
-              <input id="country" name="country" placeholder="e.g., India, UAE, Vietnam" />
-            </div>
-            <div>
-              <label for="service">Service / Need</label>
-              <select id="service" name="service">
-                <option value="Supply">Material Supply</option>
-                <option value="Design">Design Assistance</option>
-                <option value="Supervision">Site Supervision</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label for="message">Project Details</label>
-            <textarea id="message" name="message" rows="5" placeholder="Scope, quantities, specs, timeline"></textarea>
-            <small class="help">By submitting, you agree to be contacted by OYE Experts.</small>
-          </div>
-          <div class="policy">
-            <input type="checkbox" id="policy" required />
-            <label for="policy">I consent to my data being stored for the purpose of this inquiry.</label>
-          </div>
-          <button class="btn" type="submit">Send Inquiry</button>
-          <p id="formStatus" class="muted" aria-live="polite" style="margin:8px 0 0"></p>
-        </form>
-        <aside class="card">
-          <h3 class="h3">Contact</h3>
-          <p><strong>Email:</strong> sales@oyexperts.com<br>
-             <strong>Phone:</strong> +91 98765 43210<br>
-             <strong>WhatsApp:</strong> +91 98765 43210</p>
-          <p class="muted">OYE Experts India Pvt. Ltd.<br>International Supply • MEA & APAC</p>
-          <hr style="border-color:#1f242e">
-          <p><strong>Business Hours</strong><br>Mon–Sat: 9:30–18:30 IST</p>
-        </aside>
-      </div>
-    </div>
-  </section>
+  <!-- ... your CONTACT, FOOTER, FLOATING WHATSAPP ... -->
 
-  <!-- ======= FOOTER ======= -->
-  <footer>
-    <div class="container section" style="padding-bottom:24px">
-      <div class="footcols">
-        <div>
-          <div class="brand" style="margin-bottom:8px">
-            <img src="assets/logo.png" alt="OYE Experts logo" />
-            <strong>OYE Experts</strong>
-          </div>
-          <p class="muted">Geotechnical agency and international supplier of geosynthetics—helping you build safer, faster, and more sustainably.</p>
-        </div>
-        <div>
-          <h4>Company</h4>
-          <p><a href="#services">Services</a><br><a href="#materials">Materials</a><br><a href="#projects">Projects</a></p>
-        </div>
-        <div>
-          <h4>Support</h4>
-          <p><a href="#contact">Contact</a><br><a href="#">Datasheets</a><br><a href="#">Privacy Policy</a></p>
-        </div>
-        <div>
-          <h4>Follow</h4>
-          <p><a href="#">LinkedIn</a><br><a href="#">YouTube</a></p>
-        </div>
-      </div>
-      <div class="copyright">© <span id="year"></span> OYE Experts. All rights reserved.</div>
-    </div>
-  </footer>
-
-  <!-- ========== SCRIPTS ========== -->
   <script>
     // current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // back to top
+    // back to top button logic
     const toTop = document.getElementById('toTop');
     window.addEventListener('scroll', () => {
       toTop.style.display = window.scrollY > 600 ? 'block' : 'none';
