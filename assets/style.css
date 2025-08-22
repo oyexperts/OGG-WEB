@@ -1,0 +1,77 @@
+
+:root {
+  --brand-gold: #D4AF37;
+  --brand-gold-600: #b8922c;
+  --brand-dark: #0d0d0d;
+  --ink: #1a1a1a;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --bg-alt: #0f1115;
+  --card: #111318;
+  --ring: rgba(212,175,55,.4);
+  --shadow: 0 10px 25px rgba(0,0,0,.12), 0 2px 8px rgba(0,0,0,.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: var(--brand-gold); text-decoration: none; }
+a:hover { color: var(--brand-gold-600); }
+
+.container { width: min(1200px, 92vw); margin-inline: auto; }
+.grid { display: grid; gap: 24px; }
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.15rem;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  background: var(--brand-gold);
+  color: #111;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.btn:hover { background: var(--brand-gold-600); transform: translateY(-2px); }
+.btn.outline { background: transparent; border-color: var(--brand-gold); color: var(--brand-gold); }
+.btn.highlight { background: var(--brand-gold); color: #111; font-weight: 800; padding: 1rem 1.5rem; border: 2px solid var(--brand-gold); }
+
+.section { padding: 72px 0; scroll-margin-top: 90px; }
+.section.dark {
+  background: linear-gradient(180deg, #0b0c10, #111318);
+  color: #e7e7e7;
+}
+.card {
+  background: #0f1115;
+  border: 1px solid #1f242e;
+  color: #e7e7e7;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+
+.h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.1; margin: 0 0 10px; font-weight: 900; }
+.h2 { font-size: clamp(24px, 3.5vw, 34px); line-height: 1.2; margin: 0 0 10px; font-weight: 800; }
+.h3 { font-size: clamp(18px, 2.5vw, 20px); margin: 0 0 8px; font-weight: 700; }
+.muted { color: #94a3b8; }
+
+ul { margin-left: 18px; }
+li { margin: 6px 0; }
+
+footer.section { border-top: 1px solid #1f242e; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section { padding: 50px 0; }
+  .btn { padding: 0.8rem 1rem; font-size: 14px; }
+}
